@@ -2,17 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('check validate') {
+        stage('validate') {
             steps {
                 echo 'I am validating the code'
             }
         }
-     stage('Compilation') {
+     stage('Compile') {
             steps {
                 echo 'I am compiling the code'
             }
         }
-     stage('Install') {
+     stage('test') {
             steps {
                 echo 'I am instaling the code'
             }
